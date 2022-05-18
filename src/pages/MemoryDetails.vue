@@ -1,11 +1,13 @@
 <template>
-    <base-layout page-Title="The Details" page-default-back-link="/memories">
-    <h2>The details page</h2>
-    </base-layout>
+  <base-layout page-title="Profil" page-default-back-link="/memories">
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla
+      odit et dignissimos nostrum animi architecto consectetur modi, dolorum
+      consequatur quam illo fugit voluptate, ex illum asperiores quae sed nisi?
+    </h2>
+  </base-layout>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
