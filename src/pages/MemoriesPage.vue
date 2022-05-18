@@ -1,7 +1,5 @@
 <template>
-  <base-layout
-    pageTitle="Centre de Développement des Applications de la Défense de Bordeaux (CDAD-BDX)"
-  >
+  <base-layout pageTitle="Application de Gestion du Personnel du CDAD-BDX">
     <ion-list>
       <ion-item
         v-for="memory in memories"
@@ -9,7 +7,7 @@
         :key="memory.id"
       >
         <ion-thumbnail slot="start">
-          <ion-img :src="memory.image" :alt="memory.title"></ion-img>
+          <ion-img :href="memory.image" :alt="memory.title"></ion-img>
         </ion-thumbnail>
 
         <ion-label>
@@ -30,29 +28,10 @@ export default {
     IonImg,
     IonThumbnail,
   },
-  data() {
-    return {
-      memories: [
-        {
-          id: "m1",
-          title: "SGT Montbrun",
-          image: "../../public/images/Auguste.jpg",
-          description: "L'alcoolo",
-        },
-        {
-          id: "m2",
-          title: "SGT Joussaume",
-          image: "../../public/images/Théo.jpg",
-          description: "Gros bg",
-        },
-        {
-          id: "m3",
-          title: "SGT Thomin",
-          image: "../../public/images/Quentin.jpg",
-          description: "Le sicap",
-        },
-      ],
-    };
+  computed: {
+    memories() {
+      return this.$store.getters.memories;
+    },
   },
 };
 </script>
