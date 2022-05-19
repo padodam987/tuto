@@ -14,13 +14,13 @@ const store = createStore({
           id: "m2",
           title: "LCL Joussaume",
           image: "../../public/images/Théo.png",
-          description: "Gros bg",
+          description: "Haaan Yeaaah",
         },
         {
           id: "m3",
           title: "SM Thomin",
           image: "../../public/images/Quentin.png",
-          description: "Le sicap",
+          description: "Le sicap mental",
         },
       ],
     };

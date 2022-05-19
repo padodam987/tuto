@@ -7,7 +7,7 @@
         :key="memory.id"
       >
         <ion-thumbnail slot="start">
-          <ion-img :href="memory.image" :alt="memory.title"></ion-img>
+          <ion-img :src="memory.image" :alt="memory.title"></ion-img>
         </ion-thumbnail>
 
         <ion-label>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { IonList, IonItem, IonImg, IonThumbnail } from "@ionic/vue";
+import { IonList, IonItem, IonImg, IonThumbnail, IonLabel } from "@ionic/vue";
 
 export default {
   components: {
@@ -27,6 +27,7 @@ export default {
     IonItem,
     IonImg,
     IonThumbnail,
+    IonLabel,
   },
   computed: {
     memories() {
