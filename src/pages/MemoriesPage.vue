@@ -1,5 +1,5 @@
 <template>
-  <base-layout pageTitle="Application de Gestion du Personnel du CDAD-BDX">
+  <base-layout class="ion-text-center" pageTitle="Application de Gestion du Personnel du CDAD-BDX">
     <ion-list>
       <ion-item
         v-for="memory in memories"
